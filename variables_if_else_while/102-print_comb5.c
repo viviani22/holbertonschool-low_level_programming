@@ -25,10 +25,10 @@ int main(void)
 					putchar(j);
 					putchar(J);
 					if ((i != '9' || I != '8') || (j != '9' || J != '9'))
-                                        {
-                                                putchar(',');
-                                                putchar(' ');
-                                        }
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
