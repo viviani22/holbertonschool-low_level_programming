@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * add  - Entry point
- *
+ * @a: First integer
+ * @b: Second integer
  * Return - Sum of two integers
  */
 
