@@ -9,9 +9,10 @@
 int main(void)
 {
 	unsigned long first_number, second_number, fib_number;
-	unsigned long a_billion, first_placeholder1, first_placeholder2;
+	unsigned long first_placeholder1, first_placeholder2;
 	unsigned long second_placeholder1, second_placeholder2;
 	unsigned long fib_placeholder1, fib_placeholder2;
+	unsigned long a_billion;
 	int i;
 
 	first_number = 1;
