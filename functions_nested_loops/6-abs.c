@@ -2,8 +2,8 @@
 
 /**
  * _abs - Entry point
- * 
- * Return - absolute value
+ * @n: int
+ * Return: absolute value
  */
 
 int _abs(int n)
