@@ -11,6 +11,7 @@ int main(void)
 	unsigned long first_number, second_number, fib_number;
 	unsigned long a_billion, first_placeholder1, first_placeholder2;
 	unsigned long second_placeholder1, second_placeholder2;
+	unsigned long fib_placeholder1, fib_placeholder2;
 	int i;
 
 	first_number = 1;
@@ -29,15 +30,17 @@ int main(void)
 	first_placeholder2 = (first_number % a_billion);
 	second_placeholder1 = (second_number / a_billion);
 	second_placeholder2 = (second_number % a_billion);
+	fib_placeholder1 = (fib_number / a_billion);
+	fib_placeholder2 = (fib_number / a_billion);
 
-	for (i = 94; i < 102; ++i)
+	for (i = 93; i < 101; ++i)
 	{
-		printf(", %lu", second_placeholder1 + (second_placeholder2 / a_billion));
-		printf("%lu", second_placeholder2 % a_billion);
-		second_placeholder1 += first_placeholder1;
-		first_placeholder1 = second_placeholder1 - first_placeholder1;
-		second_placeholder2 += first_placeholder2;
-		first_placeholder2 = second_placeholder2 - first_placeholder2;
+		printf(", %lu", fib_placeholder1 + (fib_placeholder2 / a_billion));
+		printf("%lu", fib_placeholder2 % a_billion);
+		first_placeholder1 = second_placeholder1;
+		second_placeholder1 = fib_placeholder1;
+		first_placeholder1 = second_placeholder2;
+		second_placeholder2 = fib_placeholder2;
 	}
 	putchar('\n');
 	return (0);
