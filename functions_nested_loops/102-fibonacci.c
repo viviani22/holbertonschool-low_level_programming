@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
- * main - 
+ * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (Succesful)
  */
 
 int main(void)
@@ -10,10 +10,10 @@ int main(void)
 	long int first_number, second_number, fib_number;
 	int i;
 
-	first_number = 0;
-	second_number = 1;
-	printf ("%ld, %ld", first_number, second_number);
-	for (i = 2; i < 50; ++i)
+	first_number = 1;
+	second_number = 2;
+	printf("%ld, %ld", first_number, second_number);
+	for (i = 3; i < 51; ++i)
 	{
 		fib_number = first_number + second_number;
 		printf(", %ld", fib_number);
