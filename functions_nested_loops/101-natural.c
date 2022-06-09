@@ -1,32 +1,26 @@
 #include<stdio.h>
 /**
+ * _natural - Entry point
  *
- *
- *
+ * Return: void
  */
 void _natural(void)
 {
-	int a, b, sum, suma, sumb;
+	int a, sum;
 
-	for (a = 3; a < 1024; a++)
+	for (a = 1; a < 1024; a++)
 	{
-		a = a + 2;
-		suma = suma + a;
+		if ((a % 3 == 0) || (a % 5 == 0))
+		{
+			sum = sum + a;
+		}
 	}
-
-	for (b = 5; b < 1024; b++)
-	{
-		b = b + 4;
-		sumb = sumb + b;
-	}
-
-	sum = suma + sumb;
 	printf("%d\n", sum);
 }
 /**
+ * main - calls _natural
  *
- *
- *
+ * Return: Always 0;
  */
 int main(void)
 {
