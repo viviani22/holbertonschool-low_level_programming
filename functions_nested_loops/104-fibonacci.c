@@ -35,6 +35,8 @@ int main(void)
 
 	for (i = 93; i < 101; ++i)
 	{
+		fib_placeholder1 = first_placeholder1 + second_placeholder1;
+		fib_placeholder2 = first_placeholder2 + second_placeholder2;
 		printf(", %lu", fib_placeholder1 + (fib_placeholder2 / a_billion));
 		printf("%lu", fib_placeholder2 % a_billion);
 		first_placeholder1 = second_placeholder1;
