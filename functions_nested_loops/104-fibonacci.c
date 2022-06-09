@@ -12,11 +12,11 @@ int main(void)
 
 	first_number = 1;
 	second_number = 2;
-	printf("%ld, %ld", first_number, second_number);
+	printf("%lu, %lu", first_number, second_number);
 	for (i = 3; i < 101; ++i)
 	{
 		fib_number = first_number + second_number;
-		printf(", %ld", fib_number);
+		printf(", %lu", fib_number);
 		first_number = second_number;
 		second_number = fib_number;
 	}
