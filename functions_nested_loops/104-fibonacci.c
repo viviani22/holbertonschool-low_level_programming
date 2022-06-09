@@ -28,7 +28,7 @@ int main(void)
 	second_placeholder1 = (second_number / billion_divider);
 	second_placeholder2 = (second_number % billion_divider);
 
-	for (i = 93; i <101; ++i)
+	for (i = 94; i <101; ++i)
 	{
 		printf(", %lu", second_placeholder1 + (second_placeholder2 / billion_divider));
 		printf("%lu", second_placeholder2 % billion_divider);
