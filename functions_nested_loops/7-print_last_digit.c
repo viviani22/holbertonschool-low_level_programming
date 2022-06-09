@@ -2,8 +2,8 @@
 
 /**
  * print_last_digit - Entry point
- *
- * Return - last digit of value
+ * @n: int
+ * Return: last digit of value
  */
 
 int print_last_digit(int n)
