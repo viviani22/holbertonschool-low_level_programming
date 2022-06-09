@@ -12,7 +12,7 @@ int main(void)
 
 	first_number = 1;
 	second_number = 2;
-	sum = 0;
+	sum = 2;
 	for (i = 3; i < 33; ++i)
 	{
 		fib_number = first_number + second_number;
