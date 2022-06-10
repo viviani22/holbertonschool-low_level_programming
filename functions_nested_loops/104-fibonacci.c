@@ -19,7 +19,7 @@ int main(void)
 	second_number = 2;
 	a_billion = 1000000000;
 	printf("%lu, %lu", first_number, second_number);
-	for (i = 3; i < 92; ++i)
+	for (i = 3; i < 92; i++)
 	{
 		fib_number = first_number + second_number;
 		printf(", %lu", fib_number);
@@ -34,7 +34,7 @@ int main(void)
 	fib_placeholder1 = (fib_number / a_billion);
 	fib_placeholder2 = (fib_number / a_billion);
 
-	for (i = 93; i < 101; ++i)
+	for (i = 93; i < 100; i++)
 	{
 		fib_placeholder1 = first_placeholder1 + second_placeholder1;
 		fib_placeholder2 = first_placeholder2 + second_placeholder2;
@@ -42,7 +42,7 @@ int main(void)
 		printf("%lu", fib_placeholder2 % a_billion);
 		first_placeholder1 = second_placeholder1;
 		second_placeholder1 = fib_placeholder1;
-		first_placeholder1 = second_placeholder2;
+		first_placeholder2 = second_placeholder2;
 		second_placeholder2 = fib_placeholder2;
 	}
 	putchar('\n');
