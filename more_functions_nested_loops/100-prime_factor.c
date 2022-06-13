@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-	int i;
-	long number = 612852475143;
+	unsigned long number, i;
 
+	number = 612852475143;
 	if (number % 2 == 0)
 	{
 		number = number / 2;
 	}
 
-	for(i = 3; i <= sqrt(number); i = i+2)
+	for (i = 3; i <= number; i = i + 2)
 	{
 		while (number % i == 0)
 		{
-			number = number / i; 
+			number = number / i;
 		}
 	}
-	printf("%d\n", i);
+	printf("%lu\n", i);
 	return (0);
 }
