@@ -22,6 +22,7 @@ int main(void)
 			number = number / i;
 		}
 	}
+	i = i - 2;
 	printf("%lu\n", i);
 	return (0);
 }
