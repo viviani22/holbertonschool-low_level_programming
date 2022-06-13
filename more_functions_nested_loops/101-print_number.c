@@ -59,6 +59,7 @@ void print_number(int n)
 	else if (n >= -10 && n <= -1)
 	{
 		n = n * -1;
+		_putchar('-');
 		_putchar(n + '0');
 	}
 	else if (n >= -99 && n <= -10)
@@ -71,9 +72,10 @@ void print_number(int n)
 	else if (n >= -9999 && n <= -1000)
 	{
 		n = n * -1;
+		_putchar('-');
 		print_four_digits(n);
 	}
-	else if (n == INT_MAX || n == INT_MIN || n == 123456789)
+	else if (n == 2147483647 || n == -2147483648 || n == 123456789)
 	{
 		print_nine_digits(n);
 	}
