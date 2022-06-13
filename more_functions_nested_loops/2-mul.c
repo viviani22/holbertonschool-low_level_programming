@@ -3,7 +3,6 @@
  * mul - Takes two int from main
  * @a: first int
  * @b: second int
- *
  * Return: Multiplication of two int
  */
 
