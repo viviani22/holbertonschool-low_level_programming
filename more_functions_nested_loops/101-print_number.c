@@ -2,9 +2,10 @@
 /**
  * print_number - Called from function
  * @n: int
+ *
  * Return: void
  */
-void print_numbers(int n)
+void print_number(int n)
 {
 	if (n >= 0 && n <= 9)
 	{
