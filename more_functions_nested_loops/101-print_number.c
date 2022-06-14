@@ -17,6 +17,11 @@ void print_nine_digits(int n)
 	_putchar((n / 10) % 100000 % 10 + '0');
 	_putchar((n % 100000000) % 10 + '0');
 }
+/**
+ * print_ten_digits - Called from print_number
+ * @n: int
+ * Return: void
+ */
 void print_ten_digits(int n)
 {
 	short true;
@@ -103,10 +108,10 @@ void print_number(int n)
 	{
 		print_four_digits(n);
 	}
-	else if (n >= -9 && n <= -1)
+	else if (n >= -9 && n < 0)
 	{
 		_putchar('-');
-		_putchar(n + '0');
+		_putchar(n + 2 + '0');
 	}
 	else if (n >= -99 && n <= -10)
 	{
