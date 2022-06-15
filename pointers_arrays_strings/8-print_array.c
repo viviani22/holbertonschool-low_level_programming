@@ -2,7 +2,7 @@
 /**
  * print_array - Called from main
  * @a: pointer to int
- * @b: int
+ * @n: int
  * Return: void
  */
 void print_array(int *a, int n)
