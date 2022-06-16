@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - called from main
+ * _strncat - called from main
  * @dest: pointer to char
  * @src: pointer to char
  * @n: int
