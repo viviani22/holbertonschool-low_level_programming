@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcmp = Called from main
+ * strcmp - called from main
  * @s1: pointer to char
  * @s2: pointer to char
  * Return: int
