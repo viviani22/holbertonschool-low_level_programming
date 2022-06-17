@@ -1,34 +1,33 @@
 #include "main.h"
 /**
  * cap_string - called from main
- * @s: pointer to char
+ * @str: pointer to char
  * Return: pointer to char
  */
 char *cap_string(char *str)
 {
 	int i, j;
-	char spt[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char spt[13] = {' ', '\t', '\n', ',', ';',
+		'.', '!', '?', '"', '(', ')', '{', '}'};
 
-	j = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i == 0)
 		{
-			if (str[i] >= 97 && str[i] <= 122)
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] = str[i] - 32;
 			}
 		}
-		while (spt[j] != '\0')
+		for (j = 0; spt[j] != '\0'; j++)
 		{
 			if (str[i] == spt[j])
 			{
-				if (str[i + 1] >= 97 && str[i + 1] <= 122)
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 				{
 					str[i + 1] = str[i + 1] - 32;
 				}
 			}
-			j++;
 		}
 	}
 	return (str);
