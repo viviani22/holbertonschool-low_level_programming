@@ -14,7 +14,7 @@ char *leet(char *str)
 	{
 		for (swp = 0; swp <= 4; swp++)
 		{
-			if (str[i] == letters[i])
+			if (str[i] == letters[swp])
 			{
 				str[i] = leet_num[swp];
 			}
