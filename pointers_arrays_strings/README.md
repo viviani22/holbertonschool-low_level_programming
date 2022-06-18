@@ -24,7 +24,7 @@
 - [7-leet.c](https://github.com/viviani22/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/7-leet.c) Function that encodes a string into 1337.
 - [100-rot13.c](https://github.com/viviani22/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/100-rot13.c) Function that encodes a string using rot13.
 
-# Even more pointers, arrays, strings.
+# Even more C pointers, arrays, strings.
 
 - [0-memset.c](https://github.com/viviani22/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/0-memset.c) Function that fills memory with a constant byte.
 - [1-memcpy.c](https://github.com/viviani22/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/1-memcpy.c) Function that copies memory area.
