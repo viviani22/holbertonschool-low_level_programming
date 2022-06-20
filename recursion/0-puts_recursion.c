@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts_recursion - called from main
- * *s: char
+ * @s: char
  * Return: void
  */
 void _puts_recursion(char *s)
@@ -11,5 +11,8 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
+	else
+	{
 	_putchar('\n');
+	}
 }
