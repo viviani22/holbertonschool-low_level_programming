@@ -20,5 +20,9 @@ char *create_array(unsigned int size, char c)
 		ar[i] = c;
 		i++;
 	}
+	if (malloc(INT_MAX) == NULL)
+	{
+		return (NULL);
+	}
 	return (ar);
 }
