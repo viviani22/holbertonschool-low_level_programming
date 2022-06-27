@@ -8,7 +8,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *vp;
 
-	vp = (void *)malloc(sizeof(b));
+	vp = (void *)malloc(b);
 	if (vp == NULL)
 	{
 		exit(98);
