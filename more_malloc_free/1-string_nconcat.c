@@ -33,11 +33,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size1 && s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		p[i] = s1[i];
 	}
-	for (j = 0; j < n && j < size2 && s2[j] != '\0'; j++)
+	for (j = 0; j < n && s2[j] != '\0'; j++)
 	{
 		p[i] = s2[j];
 		i++;
