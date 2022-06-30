@@ -7,8 +7,7 @@ void print_dog(struct dog *d)
 {
 	if (d->name == NULL || d->owner == NULL)
 	{
-		free(d->name);
-		free(d->owner);
+		return;
 	}
 	printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
