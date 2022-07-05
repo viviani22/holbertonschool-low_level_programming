@@ -12,3 +12,9 @@
 - [static_libraries](https://github.com/viviani22/holbertonschool-low_level_programming/tree/main/static_libraries) Compiling object files and archiving them into libraries.
 - [argc_argv](https://github.com/viviani22/holbertonschool-low_level_programming/tree/main/argc_argv) Argument count and argument vector, working with input from CLI.
 - [malloc_free](https://github.com/viviani22/holbertonschool-low_level_programming/tree/main/malloc_free) Memory allocation, dynamic allocation of memory.
+- [more_malloc_free](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/more_malloc_free) More memory allocation.
+- [preprocessor](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/preprocessor) First step of compilation.
+- [structures_typedef](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/structures_typedef) Creating structures, adding structs and defining new types.
+- [function_pointers](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/function_pointers) Pointers that point to functions.
+- [variadic_functions](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/variadic_functions) Function that take as many variables as inputted.
+- [makefiles](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/makefiles) Scripts for shortening the compilation proccess.
