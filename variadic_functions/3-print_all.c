@@ -6,7 +6,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list(p);
+	va_list p;
 	char *sep = "";
 	int i = 0, j;
 	struct format Format[] = {
@@ -17,18 +17,16 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(p, format);
-	while (Format && (*(format + i)))
+	while (format && (*(format + i)))
 	{
 		j = 0;
-		while (j < 4 && (*(format + i) != (*(Format[j].type))))
-		{
-			if (j < 4)
-			{
-				printf("%s", sep);
-				(Format[j].f(p));
-				sep = ", ";
-			}
+		while (j < 4 && (*(format + i) != *(Format[j].type)))
 			j++;
+		if (j < 4)
+		{
+			printf("%s", sep);
+			Format[j].f(p);
+			sep = ", ";
 		}
 		i++;
 	}
