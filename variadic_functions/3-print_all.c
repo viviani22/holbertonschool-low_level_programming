@@ -2,14 +2,14 @@
 /**
  * print_all - called from main
  * @format: string
- * @struct Format:
+ * @format_v:
  */
 void print_all(const char * const format, ...)
 {
 	va_list p;
 	char *sep = "";
 	int i = 0, j;
-	struct format Format[] = {
+	format_v Format[] = {
 		{"c", print_c},
 		{"i", print_i},
 		{"f", print_f},
@@ -72,6 +72,9 @@ void print_s(va_list p)
 	char *str = va_arg(p, char*);
 
 	if (str == NULL)
+	{
 		printf("(nil)");
+		return;
+	}
 	printf("%s", str);
 }
