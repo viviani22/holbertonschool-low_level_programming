@@ -2,6 +2,7 @@
 /**
  * print_all - called from main
  * @format: string
+ * @struct Format:
  */
 void print_all(const char * const format, ...)
 {
@@ -9,22 +10,22 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 	int i = 0, j;
 	struct format Format[] = {
-		{'c', print_c},
-		{'i', print_i},
-		{'f', print_f},
-		{'s', print_s}
+		{"c", print_c},
+		{"i", print_i},
+		{"f", print_f},
+		{"s", print_s}
 	};
 
 	va_start(p, format);
-	while (i < 4)
+	while (Format && (*(format + i)))
 	{
 		j = 0;
-		while (j < 4)
+		while (j < 4 && (*(format + i) != (*(Format[j].type))))
 		{
-			if (format[i] == Format[j].type)
+			if (j < 4)
 			{
 				printf("%s", sep);
-				(Format[j].f)(p);
+				(Format[j].f(p));
 				sep = ", ";
 			}
 			j++;
