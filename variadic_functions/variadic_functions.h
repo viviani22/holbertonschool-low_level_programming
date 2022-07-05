@@ -13,7 +13,7 @@ void print_f(va_list p);
 void print_s(va_list p);
 struct format
 {
-	char type;
+	char *type;
 	void (*f)(va_list);
 };
 #endif
