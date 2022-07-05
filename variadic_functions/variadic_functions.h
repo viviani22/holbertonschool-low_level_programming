@@ -11,9 +11,14 @@ void print_c(va_list p);
 void print_i(va_list p);
 void print_f(va_list p);
 void print_s(va_list p);
-struct format
+/**
+ * struct format - struct
+ * @type: string
+ * @f: function
+ */
+typedef struct format
 {
 	char *type;
 	void (*f)(va_list);
-};
+} format_v;
 #endif
