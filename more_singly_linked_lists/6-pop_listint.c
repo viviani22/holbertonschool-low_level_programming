@@ -4,6 +4,7 @@
 /**
  * pop_listint - called from main
  * @head: head
+ * Return: int
  */
 int pop_listint(listint_t **head)
 {
