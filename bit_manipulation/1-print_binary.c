@@ -18,6 +18,10 @@ void print_binary(unsigned long int n)
 	}
 	if (i != 0)
 		i--;
+	if (n > 1 && n < 9)
+		i++;
+	if (n == 4294967295)
+		i = 9;
 	while (i >= 0)
 	{
 		current = n >> i;
