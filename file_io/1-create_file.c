@@ -8,7 +8,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int flag, flag1, length;
+	int flag, flag1, length = 0;
 
 	if (text_content != NULL)
 		for (length = 0; text_content[length] != '\0'; length++)
