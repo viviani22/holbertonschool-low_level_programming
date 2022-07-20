@@ -18,3 +18,8 @@
 - [function_pointers](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/function_pointers) Pointers that point to functions.
 - [variadic_functions](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/variadic_functions) Function that take as many variables as inputted.
 - [makefiles](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/makefiles) Scripts for shortening the compilation proccess.
+- [singly_linked_lists](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/singly_linked_lists) Implementing a type of data structure called single linked list, which can only move forward.
+- [more_singly_linked_lists](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/more_singly_linked_lists) More single linked lists.
+- [bit_manipulation](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/bit_manipulation) Manipulating bits.
+- [file_io](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/file_io) Input/Outputs of files, open, close, read, write functions.
+- [doubly_linked_lists](https://github.com/viviani22/holbertonschool-low_level_programming/edit/main/doubly_linked_lists) Similar to singly linked lists, but the list can go both ways.
